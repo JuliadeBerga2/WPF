@@ -1,36 +1,35 @@
-name: dp
+name: .NET Framework Build and Run
 
 on:
   push:
-    branches: none # [ main ]
-  pull_request:
-    branches: none # [ main ]
-    
-  # Allows you to run this workflow manually from the Actions tab
-  workflow_dispatch:
+    branches:
+      - main  # Change this to your main branch name
 
 jobs:
-  build-dotnet-app:
-
-    runs-on: ubuntu-latest
-    
-    defaults:
-      run:
-        working-directory: s072
+  build:
+    runs-on: windows-latest  # Use Windows runners for .NET Framework projects
 
     steps:
-    - uses: actions/checkout@v3
-    
-    - name: Setup .NET
-      uses: actions/setup-dotnet@v2
+    - name: Check out code
+      uses: actions/checkout@v2
+
+    - name: Setup .NET Framework
+      uses: actions/setup-dotnet@v1
       with:
-        dotnet-version: 6.0.x
-  
-    - name: Restore dependencies
-      run: dotnet restore
-      
-    - name: Build
-      run: dotnet build --no-restore
-      
-    - name: Test
-      run: dotnet test --no-build --verbosity normal
+        dotnet-version: '6.0.x'  # Specify the .NET Framework version you need
+
+    - name: Build .NET Framework Project
+      run: |
+        # Navigate to your project directory
+        cd s072\s072.csproj
+
+        # Build the project
+        msbuild s072.sln
+
+    - name: Run .NET Framework Executable
+      run: |
+        # Navigate to the output directory of your project
+        cd D:\M07 Interficies\00 Sessions\s072\s072\bin\Release\net6.0-windows\win-x64\publish\
+
+        # Run your .NET Framework executable
+        s072.exe
