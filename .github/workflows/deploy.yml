@@ -21,7 +21,7 @@ jobs:
     - name: Build .NET Framework Project
       run: |
         # Navigate to your project directory
-        cd s072\s072.csproj
+        cd s072/s072.csproj
 
         # Build the project
         msbuild s072.sln
@@ -29,7 +29,7 @@ jobs:
     - name: Run .NET Framework Executable
       run: |
         # Navigate to the output directory of your project
-        cd D:\M07 Interficies\00 Sessions\s072\s072\bin\Release\net6.0-windows\win-x64\publish\
+        cd s072\bin\Release\net6.0-windows\win-x64\publish\
 
         # Run your .NET Framework executable
-        s072.exe
+        S072.exe
