@@ -1,0 +1,15 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\.github",
+    "\\.github\\workflows",
+    "\\s072",
+    "\\s072\\bin",
+    "\\s072\\bin\\Release",
+    "\\s072\\bin\\Release\\net6.0-windows",
+    "\\s072\\bin\\Release\\net6.0-windows\\win-x64",
+    "\\s072\\bin\\Release\\net6.0-windows\\win-x64\\publish"
+  ],
+  "SelectedNode": "\\s072\\bin\\Release\\net6.0-windows\\win-x64\\publish\\s072.exe",
+  "PreviewInSolutionExplorer": false
+}
