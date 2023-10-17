@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "4lf6O67iICgOWc7fqt8HhOYLzpjYFEPjUsEIV1u938mMtsyo1wCDraAPgqWjy9YnXgjTOqbB4NFeVGWF/p7OhQ==",
+  "success": true,
+  "projectFilePath": "D:\\M07 Interficies\\00 Sessions\\s072\\s072\\s072.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\W10 1050\\.nuget\\packages\\microsoft.netcore.app.runtime.win-x64\\6.0.18\\microsoft.netcore.app.runtime.win-x64.6.0.18.nupkg.sha512",
+    "C:\\Users\\W10 1050\\.nuget\\packages\\microsoft.windowsdesktop.app.runtime.win-x64\\6.0.18\\microsoft.windowsdesktop.app.runtime.win-x64.6.0.18.nupkg.sha512",
+    "C:\\Users\\W10 1050\\.nuget\\packages\\microsoft.aspnetcore.app.runtime.win-x64\\6.0.18\\microsoft.aspnetcore.app.runtime.win-x64.6.0.18.nupkg.sha512"
+  ],
+  "logs": []
+}
